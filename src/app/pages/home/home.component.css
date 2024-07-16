@@ -1,0 +1,350 @@
+.banner_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 500px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.next_arrow {
+  position: absolute;
+  right: 0;
+  margin: 10px;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  background: url('../../../assets/img/next.png') center center no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.prev_arrow {
+  position: absolute;
+  left: 0;
+  margin: 10px;
+  top: 50%;
+  width: 30px;
+  height: 30px;
+  background: url('../../../assets/img/back.png') center center no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px; /* Sabit genişlik */
+  height: 500px; /* Sabit yükseklik */
+  overflow: hidden;
+}
+
+.banner_box {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: auto; /* Sabit yükseklik */
+  transition: all 0.5s ease-in-out;
+}
+
+.banner_box.active {
+  display: flex;
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+
+}
+
+.banner_image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 27px;
+  height: 100%; /* Sabit yükseklik */
+}
+
+.banner_image img {
+
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Görselin kutuya sığmasını sağlar */
+}
+
+.contents {
+  flex: 1;
+  padding: 50px;
+  max-width: 60%;
+  height: 90%; /* Sabit yükseklik */
+  overflow: hidden;
+  background-color:rgb(250, 250, 250);
+}
+
+
+.step .row {
+  display: flex;
+  flex-wrap: nowrap; /* Aynı hizaya gelmeleri için eklenmiştir */
+  justify-content: space-between; /* Aralarındaki boşluğu eşitler */
+  margin: 10px auto;
+  max-width: 1000px; /* Sabit genişlik */
+}
+
+.half-post-entry .caption, .caption {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
+.contents a {
+  font-size: 26px;
+  text-decoration: none;
+  color: black;
+}
+
+.h2, h2 {
+  font-size: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.post-meta a {
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+a {
+  transition: .3s all ease;
+  color: #8bc34a;
+  text-decoration: none;
+  background-color: transparent;
+  text-decoration-skip-ink: auto;
+}
+
+.date-read {
+  color: #b4b4b4;
+  font-size: 13px;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.img-fluid {
+  width: 160px;
+  height: auto;
+}
+
+.img-top {
+  width: 100%;
+  height: auto;
+}
+
+.post-entry-2 {
+  margin-top: 40px;
+  padding: 20px;
+
+}
+
+.post-entry-2 .content {
+  padding: 5px;
+}
+
+.post-entry-2 .content h2 a {
+  font-size: 15px;
+  color: black;
+}
+
+.trend-entry {
+  margin-bottom: 15px;
+}
+
+.trend-entry .more {
+  color: #8bc34a;
+  text-decoration: none;
+}
+.trend-entry .more:hover {
+  color: #436819;
+  text-decoration: underline;
+}
+.number {
+  font-size: 40px;
+  color: lightgray;
+  padding: 1cap;
+}
+
+.trending-title {
+  font-size: 20px;
+  color: black;
+}
+
+.editor-title {
+  font-size: 25px;
+  color: black;
+}
+
+.big-title {
+  font-size: 23px;
+  text-decoration: underline;
+  margin-bottom: 30px;
+  color: black;
+}
+.step2_img{
+  float: right;
+  margin: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 550px;
+  height: auto;
+  object-fit: cover; /* Görselin kutuya sığmasını sağlar */
+}
+.step3-img{
+  width: 152px;
+  height: auto;
+}
+.step3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 90px auto;
+}
+
+.step3 .row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px; /* Maksimum genişliği belirleyin */
+  margin: 25px auto;
+}
+
+.step3 .col-lg-6 {
+  flex: 0 0 50%; /* İki sütun yan yana */
+  max-width: 90%;
+}
+.conten{
+  font-size: 12px;
+  margin: 8px;
+}
+.conten h2 a{
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+}
+@media (max-width: 1200px) {
+  .step3 .col-lg-6 {
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+/* Responsive Stil */
+@media (max-width: 1200px) {
+  .step .row {
+    flex-wrap: wrap; /* Satırları sarar */
+  }
+  .step .col-lg-4 {
+    flex: 0 0 48%; /* İki sütun yapar */
+    max-width: 48%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .step .col-lg-4 {
+    flex: 0 0 100%; /* Tek sütun yapar */
+    max-width: 100%;
+  }
+  .contents {
+    padding: 20px;
+  }
+}
+
+.container {
+  
+
+}
+.container-img{
+  width: 250px;
+
+}
+
+.site-section {
+  padding: 2.5em 0;
+  margin-left: 100px;
+
+}
+@media (min-width: 768px) {
+  .site-section {
+      padding: 7em 0;
+      padding-top: 7em;
+      padding-right: 0px;
+      padding-bottom: 7em;
+      padding-left: 0px;
+  }
+}
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+
+.container input[type="email"] {
+  padding: 8px;
+  border: rgb(130, 130, 130);
+  border-bottom: 1px solid rgb(130, 130, 130);
+  border-radius: 20px;
+  margin-right: 5px;
+  font-size: 17px;
+  width: 450px;
+}
+
+.container button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-left: 5px;
+}
+
+.container button:hover {
+  background: #8bc34a;
+}
+
+.container button i {
+  font-size: 16px;
+}
+
+.section-title{
+  font-size: 15px;
+  margin: 50px;
+  text-decoration: underline;
+}

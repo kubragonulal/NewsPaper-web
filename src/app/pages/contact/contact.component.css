@@ -1,0 +1,37 @@
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1140px;
+  }
+}
+.container input[type="text"] {
+  padding: 8px;
+  border: rgb(130, 130, 130);
+  border-bottom: 1px solid rgb(130, 130, 130);
+  border-radius: 20px;
+  margin: 20px;
+  margin-right: 5px;
+  font-size: 17px;
+  width: 500px;
+}
+
+#message{
+  border-radius: 30px;
+  border: rgb(130, 130, 130);
+  border-bottom: 1px solid rgb(130, 130, 130);
+}
+.container input[type="submit"] {
+  background-color: black;
+  padding: 8px;
+  border-color: black;
+  border-radius: 35px;
+  margin: 20px;
+  margin-right: 5px;
+  font-size: 17px;
+  height: 70px;
+}
+.section-title{
+  font-size: 10px;
+  padding: 10px;
+  text-decoration: underline;
+}
+

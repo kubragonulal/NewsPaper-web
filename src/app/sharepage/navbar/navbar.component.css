@@ -1,0 +1,15 @@
+.navbar-light .navbar-nav .nav-link.active-link {
+  font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--background-dark-color);
+  margin: 15px;
+  text-decoration: none;
+}
+
+.navbar {
+  max-width: 1200px; /* Sabit genişlik */
+  margin: 0 auto; /* Ortalamak için margin auto */
+  justify-content: flex-start; /* Sol hizalama */
+}
